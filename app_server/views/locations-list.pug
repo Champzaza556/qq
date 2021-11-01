@@ -1,0 +1,93 @@
+extends layout
+include _includes/sharedHTMLfunctions
+block content
+
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+        small &nbsp;#{pageHeader.strapline}
+  .row
+    .col-12.col-md-8
+      each location in locations
+        .card
+          .card-block
+            h4 
+              a(href="/location") Basic knowledge about bitcoin 
+            p.address 1st in coinmarketcap Ranking
+            img.img-fluid.rounded(src='https://s2.coinmarketcap.com/static/cloud/img/bitcoin-price-prediction/metaImg.png?_=f72efa3')
+            .facilities
+              large &nbsp;&nbsp;  
+              span.badge.badge-warning2 News
+              large &nbsp;&nbsp;        
+              span.badge.badge-warning2 Charts
+              large &nbsp;&nbsp;        
+              span.badge.badge-warning2 Trading price
+          
+              
+                
+
+                
+  .row
+    .col-12.col-md-8
+      each location in locations
+        .card
+          .card-block
+            h4
+              a(href="/location2") Basic knowledge about Etheruem
+            p.address  2nd in coinmarketcap Ranking
+            img.img-fluid.rounded(src='https://thecurrencyanalytics.com/wp-content/uploads/2019/01/ethereum_2CMC-1200x720.jpg')
+            .facilities
+              large &nbsp;&nbsp;  
+              span.badge.badge-warning News
+              large &nbsp;&nbsp;        
+              span.badge.badge-warning Charts
+              large &nbsp;&nbsp;        
+              span.badge.badge-warning Trading price
+              
+              
+
+  
+  .row
+    .col-12.col-md-8
+      each location in locations
+        .card
+          .card-block
+            h4
+              a(href="/location3")  Basic knowledge about Binancecoin
+            p.address 3rd in coinmarketcap Ranking
+            img.img-fluid.rounded(src='https://www.siambitcoin.com/wp-content/uploads/2020/03/29-CoinMarketCap-Binance.png')
+            .facilities
+              large &nbsp;&nbsp;  
+              span.badge.badge-warning3 News
+              large &nbsp;&nbsp;        
+              span.badge.badge-warning3 Charts
+              large &nbsp;&nbsp;        
+              span.badge.badge-warning3 Trading price
+              
+  .row
+    .col-12.col-md-8
+      each location in locations
+        .card
+          .card-block
+            h4
+              a(href="/location4") Basic knowledge about Dogecoin
+            p.address 4th in coinmarketcap Ranking
+            img.img-fluid.rounded(src='https://www.aljazeera.com/wp-content/uploads/2021/02/367892651.jpg?resize=770%2C513')
+            .facilities
+              large &nbsp;&nbsp;  
+              span.badge.badge-warning3 News
+              large &nbsp;&nbsp;        
+              span.badge.badge-warning3 Charts
+              large &nbsp;&nbsp;        
+              span.badge.badge-warning3 Trading price
+              
+
+   
+
+                
+                
+            
+            
+                
+    .col-12.col-md-4
+      p.lead= sidebar
